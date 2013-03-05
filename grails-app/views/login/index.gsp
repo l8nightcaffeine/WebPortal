@@ -31,7 +31,7 @@
 		</style>
 	</head>
 	<body>
-
+		<p> this is a test </p>
 		<div id="login">
 			<img id="loginPic" src="${resource(dir: 'images', file: 'LevelData_login.png')}">
 			<div id="loginDialog">

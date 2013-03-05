@@ -42,11 +42,11 @@
 		</div>
 		
 		<div id="sidebar">
-   		    <g:link controller="Admin" action="op6"> Admin op6 </g:link></br>
-           	<g:link controller="Admin" action="op7"> Admin op7 </g:link></br>
-           	<g:link controller="Admin" action="op8"> Admin op8 </g:link></br>
-           	<g:link controller="Admin" action="op9"> Admin op9 </g:link></br>
-           	<g:link controller="Admin" action="op10"> Admin op10 </g:link></br>
+   		    <g:link controller="Admin" action="op6"> Admin op6 </g:link><br/>
+           	<g:link controller="Admin" action="op7"> Admin op7 </g:link><br/>
+           	<g:link controller="Admin" action="op8"> Admin op8 </g:link><br/>
+           	<g:link controller="Admin" action="op9"> Admin op9 </g:link><br/>
+           	<g:link controller="Admin" action="op10"> Admin op10 </g:link><br/>
 		</div>
 		
 		<div id="content">

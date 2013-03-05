@@ -1,0 +1,73 @@
+
+/* NAVIGATION */
+
+			nav{
+				height: 50px;
+				width: 100%;
+				font-size: 15px;
+				margin: 10px;
+				margin: 0 auto;
+			}
+
+			nav ul{
+				font-size:  13px;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav li{
+				float: left;
+				position: relative;
+			}
+
+			nav a{
+				color: white;
+				display: block;
+				line-height: 40px;
+				padding-right: 30px;
+				text-decoration: none;
+			}
+
+			nav ul ul{
+				display: none;
+				background: gray;
+				border-left: 5px solid green;
+				border-right: 5px solid green;
+				border-bottom: 5px solid green;
+				float: left;
+				position: absolute;
+				top: 40px;
+				padding: 0;
+				z-index: 9999;
+
+			}
+
+			nav ul li:hover > ul {
+				display: block;
+			}
+
+			nav ul li a:hover{
+				color: black;
+			}
+			#img{
+				padding-right: 20px;
+			}
+			#navDecor{
+				width: 100%;
+				background: gray;
+				border: 5px solid green;
+				margin-bottom: 115px;
+			}
+			
+/* FOOTER */
+
+
+
+			footer{
+				height:15px;
+				width: 100%;
+				color: black;
+				font-size: 9.5px;
+				text-align: center;
+			}

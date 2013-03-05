@@ -1,0 +1,15 @@
+			#content{
+				margin:-1px;
+				border: 1px solid black;
+				float: left;
+				width: 80%;
+				height: 200px;
+			}
+
+			#sidebar{
+				margin:-1px;
+				border: 1px solid black;
+				float: right;
+				width: 20%;
+				height: 200px;
+			}

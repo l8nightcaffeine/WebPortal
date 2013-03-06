@@ -1,4 +1,4 @@
-package webportal.wireframe
+package webportal
 
 class LoginController {
 

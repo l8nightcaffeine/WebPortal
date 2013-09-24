@@ -58,14 +58,35 @@ grails.exceptionresolver.params.exclude = ['password']
 
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
-
+cas {
+    urlPattern = '/someurl/*'
+//    urlPattern = ['/oneurl/*', '/another', '/anotheranother/*']
+    disabled = false
+}
 environments {
     development {
         grails.logging.jul.usebridge = true
+
+         cas.loginUrl = 'https://dev.casserver.demo.com/cas/login'
+        cas.validateUrl = 'https://dev.casserver.demo.com/cas/serviceValidate'
+        cas.serverName = 'dev.casclient.demo.com:80'
+//        cas.serviceUrl = 'http://dev.casclient.demo.com/access'
+        cas.disabled = true
+        cas.mocking = true
+    }
+    test {
+        cas.loginUrl = 'https://test.casserver.demo.com/cas/login'
+        cas.validateUrl = 'https://test.cas.com/cas/serviceValidate'
+        cas.serverName = 'test.casclient.demo.com:80'
+//        cas.serviceUrl = 'http://test.casclient.demo.com/access'
     }
     production {
         grails.logging.jul.usebridge = false
         // TODO: grails.serverURL = "http://www.changeme.com"
+         cas.loginUrl = 'https://prod.casserver.demo.com/cas/login'
+        cas.validateUrl = 'https://prod.casserver.demo.com/cas/serviceValidate'
+        cas.serverName = 'prod.casclient.demo.com:80'
+//        cas.serviceUrl = 'http://prod.casclient.demo.com/access'
     }
 }
 
